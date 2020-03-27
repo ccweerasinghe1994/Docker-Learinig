@@ -1,0 +1,11 @@
+version: "3.7"
+# this is the composer version
+
+# this is a container
+services:
+  redis-server:
+    image: "redis"
+  node-app:
+    build: .
+    ports:
+      - "4001:8081"
